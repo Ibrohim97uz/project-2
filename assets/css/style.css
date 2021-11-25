@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav_container {
+  width: 97%;
+  margin: 0 auto;
+}
+
+span {
+  color: #c51313;
+}
+
+.center {
+  text-align: center;
+}
+
+nav {
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.781);
+  border-bottom: 1px solid red;
+  z-index: 1000;
+}
+nav .nav_inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav_inside .nav_list li {
+  display: inline-block;
+}
+nav .nav_inside .nav_list li a {
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s;
+  font-size: 13px;
+  border-radius: 5px;
+}
+nav .nav_inside .nav_list li a:hover {
+  background-color: #c51313;
+  color: #fff;
+}
+nav .nav_inside .nav_list li a {
+  font-weight: 600;
+  color: #414040;
+}
+
+.showcase {
+  background-image: url(../img/showcase.jpg);
+  height: 423px;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showcase h1 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.794);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reasons .my50 {
+  margin: 50px 0;
+}
+.reasons .reason_inside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.reasons .reason_inside > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.reasons .reason_inside > div > div {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 15px;
+}
+.reasons .reason_inside > div > div .card-text {
+  margin: 20px 0;
+}
+.reasons .reason_inside > div > div .button {
+  display: block;
+  text-align: center;
+  background-color: #c51313;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #fff;
+  transition: box-shadow 0.2s;
+}
+.reasons .reason_inside > div > div .button:hover {
+  box-shadow: 0 0 0 3px #c51313;
+}
+.reasons .reason_inside > div img {
+  height: 150px;
+  width: 100%;
+}
+
+.majors {
+  margin: 50px 0;
+}
+.majors .title {
+  margin: 50px 0;
+}
+.majors table {
+  border-collapse: collapse;
+}
+.majors table thead {
+  background-color: #333;
+}
+.majors table thead th {
+  padding: 10px 0;
+  color: #fff;
+}
+.majors table .bolder {
+  background-color: #d8d8d8;
+}
+.majors table td {
+  padding: 15px 5px;
+}
+
+.about {
+  background-color: #343a40;
+  padding: 30px 0;
+  color: #fff;
+}
+.about .about_inside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  padding: 50px 0;
+}
+.about .about_inside .subscribe {
+  text-align: center;
+}
+.about .about_inside .subscribe h3 {
+  margin: 15px 0;
+}
+.about .about_inside .subscribe form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+.about .about_inside .subscribe form input + a {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  background-color: #c51313;
+  border-radius: 7px;
+}
+.about .about_inside .useful_links li {
+  padding: 10px;
+  background-color: #ffffff67;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+.about .about_inside .useful_links li a:hover {
+  color: #c51313;
+}
+
+.teachers_showcase {
+  background-image: url(../img/teacher_showcase.jpg);
+  height: 423px;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.teachers_showcase h1 {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.794);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.teacher_cards {
+  transform: translateY(-50px);
+}
+.teacher_cards .teacher_container {
+  width: 80%;
+  margin: 0 auto;
+}
+.teacher_cards .teachers_cards_inside {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.teacher_cards .teachers_cards_inside .card {
+  text-align: center;
+  border: 1px solid #b3b1b1;
+}
+.teacher_cards .teachers_cards_inside .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.teacher_cards .teachers_cards_inside .card .card_header {
+  background-color: #e7e7e7;
+  border: 1px solid #b3b1b1;
+}
+.teacher_cards .teachers_cards_inside .card .card_body {
+  margin: 20px 0;
+}
+.teacher_cards .teachers_cards_inside .card .card_body h1 {
+  font-size: 15px;
+  font-weight: 100;
+}
+.teacher_cards .teachers_cards_inside .card .number {
+  padding: 10px;
+}
+.teacher_cards .teachers_cards_inside .card .number a {
+  display: block;
+  padding: 10px;
+  background-color: #e6dddd;
+}
+
+.about_showcase {
+  background-color: #aaa;
+  height: 423px;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.about_showcase h1 {
+  font-size: 80px;
+}
+
+.about_text {
+  margin: 50px 0;
+}
+
+.contact_showcase {
+  background-image: url(../img/contact_showcase.jpg);
+  height: 423px;
+  background-position-y: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact_showcase div {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.794);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact_cards {
+  transform: translateY(-50px);
+}
+.contact_cards .contact_container {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact_cards .cards_inside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+.contact_cards .cards_inside .card {
+  border: 1px solid #b3b1b1;
+}
+.contact_cards .cards_inside .card .card_header {
+  background-color: #e7e7e7;
+  border: 1px solid #b3b1b1;
+}
+.contact_cards .cards_inside .card .card_header i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.contact_cards .cards_inside .card .card_body {
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.login_showcase {
+  padding: 100px 0;
+}
+.login_showcase .form_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.login_showcase .form_wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login_showcase .form_wrapper form label {
+  padding: 5px 0;
+}
+.login_showcase .form_wrapper form input {
+  padding: 8px;
+}
+.login_showcase .form_wrapper form input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.login_showcase .form_wrapper form input[type=submit]:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.register_showcase {
+  margin: 100px 0;
+}
+.register_showcase .register_container {
+  width: 95%;
+  margin: 0 auto;
+}
+.register_showcase .register_container .showcase_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+.register_showcase .register_container .showcase_wrapper .right_side {
+  padding: 50px;
+}
+.register_showcase .register_container .showcase_wrapper .right_side form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.register_showcase .register_container .showcase_wrapper .right_side form label {
+  padding: 5px 0;
+}
+.register_showcase .register_container .showcase_wrapper .right_side form input {
+  padding: 8px;
+}
+.register_showcase .register_container .showcase_wrapper .right_side form input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.register_showcase .register_container .showcase_wrapper .right_side form input[type=submit]:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.nav_list_burger {
+  display: none;
+}
+
+.burger_menu {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .reasons .reason_inside {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .teacher_cards .teachers_cards_inside {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact_cards .cards_inside {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .register_showcase .register_container .showcase_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  nav {
+    padding: 30px 0;
+  }
+
+  .burger_menu {
+    cursor: pointer;
+    display: flex;
+    width: 50px;
+    height: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .burger_menu.transform .line-1 {
+    transform: translate(7px, 7px) rotate(45deg);
+  }
+  .burger_menu.transform .line-2 {
+    display: none;
+  }
+  .burger_menu.transform .line-3 {
+    transform: translate(7px, -16px) rotate(-45deg);
+  }
+  .burger_menu span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .nav_list_burger.show {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .nav_list_burger.show li {
+    padding: 10px;
+    background-color: #868181;
+    margin: 5px 0;
+  }
+  .nav_list_burger.show li:hover {
+    background-color: #585656;
+    cursor: pointer;
+  }
+  .nav_list_burger.show li a {
+    color: #fff;
+  }
+}
+@media (max-width: 600px) {
+  .reasons .reason_inside {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about .about_inside {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .showcase h1 {
+    padding: 5px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .majors {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
